@@ -1,0 +1,5 @@
+package javaDeveloperSpring.io.rentAcar.wepApi.controllers;
+
+public class BrandsController {
+
+}

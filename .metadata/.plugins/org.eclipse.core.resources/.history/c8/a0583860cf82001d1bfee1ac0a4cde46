@@ -1,0 +1,11 @@
+package javaDeveloperSpring.io.rentAcar.dataAccess.abstracts;
+
+import java.util.List;
+
+import javaDeveloperSpring.io.rentAcar.entities.concretes.Brand;
+
+public interface BrandRepository {
+
+	List<Brand> getAll();
+	
+}

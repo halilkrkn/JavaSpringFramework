@@ -1,0 +1,5 @@
+package javaDeveloperSpring.io.rentAcar.dataAccess.concretes;
+
+public class InMemoryBrandRepository {
+
+}

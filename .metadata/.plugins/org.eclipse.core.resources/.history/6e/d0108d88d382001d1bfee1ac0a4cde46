@@ -1,0 +1,27 @@
+package javaDeveloperSpring.io.rentAcar.business.concretes;
+
+import java.util.List;
+
+import javaDeveloperSpring.io.rentAcar.business.abstracts.BrandService;
+import javaDeveloperSpring.io.rentAcar.dataAccess.abstracts.BrandRepository;
+import javaDeveloperSpring.io.rentAcar.entities.concretes.Brand;
+
+//İş kuralları yazılacak.
+public class BrandManager implements BrandService{
+
+	private BrandRepository brandRepository;
+	
+	
+	public BrandManager(BrandRepository brandRepository) {
+		super();
+		this.brandRepository = brandRepository;
+	}
+
+
+	@Override
+	public List<Brand> getAllBrands() {
+		return brandRepository.getAll();
+	}
+	
+
+}

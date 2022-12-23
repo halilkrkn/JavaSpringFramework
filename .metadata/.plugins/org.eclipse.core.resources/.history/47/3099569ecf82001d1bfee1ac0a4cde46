@@ -1,0 +1,6 @@
+package javaDeveloperSpring.io.rentAcar.business.abstracts;
+
+// Business - İş kurallarının yazılacağı yer.
+public interface BrandService {
+
+}

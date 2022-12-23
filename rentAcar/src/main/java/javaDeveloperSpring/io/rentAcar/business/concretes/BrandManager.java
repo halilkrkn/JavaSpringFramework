@@ -1,0 +1,31 @@
+package javaDeveloperSpring.io.rentAcar.business.concretes;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javaDeveloperSpring.io.rentAcar.business.abstracts.BrandService;
+import javaDeveloperSpring.io.rentAcar.dataAccess.abstracts.BrandRepository;
+import javaDeveloperSpring.io.rentAcar.entities.concretes.Brand;
+
+//İş kuralları yazılacak.
+// IoC, ilgili annotation'ları alan sınıfların birden fazla referans oluşturmaması için IoC içerisine alınır ve tek bir referans olarak kullanılması sağlanır. 
+// Yani bir sınıfı bir kutu içerisinde tek bir referansı olur ve o referans kullanılır.
+@Service // IoC'ye eklettik ve bu sınıf bir Business Nesnesidir.
+public class BrandManager implements BrandService {
+
+	private BrandRepository brandRepository;
+
+	@Autowired
+	public BrandManager(BrandRepository brandRepository) {
+		super();
+		this.brandRepository = brandRepository;
+	}
+
+	@Override
+	public List<Brand> getAll() {
+		return brandRepository.getAll();
+	}
+
+}

@@ -1,0 +1,8 @@
+package javaDeveloperSpring.io.rentAcar.business.concretes;
+
+import javaDeveloperSpring.io.rentAcar.business.abstracts.BrandService;
+
+public class BrandManager implements BrandService{
+	
+
+}

@@ -1,0 +1,5 @@
+package javaDeveloperSpring.io.rentAcar.entities.concretes;
+
+public class Brand {
+
+}
